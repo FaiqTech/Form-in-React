@@ -1,38 +1,52 @@
-.App {
-  text-align: center;
+/* App.css */
+body {
+  margin-top: 15%;
+}
+.error {
+  color: red; /* Set the color to red */
+  margin-top: 5px; /* Add some space between the input and the error message */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form input[type="text"],
+.form input[type="email"],
+.form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* padding ve border'ı dahil etmek için */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.form select {
+  appearance: none; /* tarayıcı varsayılan oku gizle */
 }
 
-.App-link {
-  color: #61dafb;
+.form label {
+  display: block;
+  margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form button {
+  display: block;
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background-color: #0056b3;
 }
